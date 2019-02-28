@@ -31,10 +31,9 @@ export default function (state: SkywalkersState = initialState, action: RootActi
         isFetching: false,
       };
     case (getType(deleteSkywalker)):
-    
       return {
         ...state,
-        list: [...state.list.filter(list => list.name!==action.payload.name)],
+        list: [...state.list.filter(list => list.name!==action.payload)],
       };
 
     default: {

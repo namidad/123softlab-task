@@ -58,8 +58,9 @@ class Skywalkers extends PureComponent<Props> {
     this.props.onFetch();
   }
 
-  handleDelete = (index) => {
-    this.props.onDelete(index);
+  handleDelete = (name) => {
+    console.log(name);
+    this.props.onDelete(name);
   }
 
 
